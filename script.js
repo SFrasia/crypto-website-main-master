@@ -41,10 +41,10 @@ function showData(data) {
             <td>$${current_price}</td>
             <td class= "${
               +market_cap > 0 ? "success" : "danger"
-            }">${market_cap.toFixed(2)}</td>
+            }">${market_cap.toFixed(2)}%</td>
             <td class = "${
               +price_cap > 0 ? "success" : "danger"
-            }">${price_cap.toFixed(2)}</td>
+            }">${price_cap.toFixed(2)}M</td>
             <td><button class="buy show-modal">Buy</button></td>
             </tr>
             `;
