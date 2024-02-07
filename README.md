@@ -2,13 +2,20 @@
 
 ## Table of Contents
 
-<u>Overview</u>
-<u>Features</u>
-Installation
-Usage
-Contributing
-License
-Overview
+## <ins>Overview</ins>
+
+## <ins>Features</ins>
+
+## <ins>Installation</ins>
+
+## <ins>Usage</ins>
+
+## <ins>Contributing</ins>
+
+## <ins>License</ins>
+
+## Overview
+
 The Cryptocurrency Project is a [brief description of the project]. It aims to [mention the project's objectives or goals]. Built on blockchain technology, our cryptocurrency offers [mention any unique features or benefits].
 
 Features
