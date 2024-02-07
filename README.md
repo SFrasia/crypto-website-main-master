@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-Overview
-Features
+<u>Overview</u>
+<u>Features</u>
 Installation
 Usage
 Contributing
