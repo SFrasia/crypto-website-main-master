@@ -24,13 +24,12 @@ To run the Cryptocurrency Project locally, follow these steps:
 
 ```
 Clone the repository:
-
 bash
 Copy code
 git clone https://github.com/your_username/crypto-website-main-master.git
 ```
 
-````
+```
 Navigate to the project directory:
 bash
 Copy code
@@ -67,7 +66,7 @@ Push to the branch (git push origin feature/new-feature).
 Create a pull request.
 
 ## License
+
 Copyright (c) [2024] [Frasia Nyakundi]
 
 The Cryptocurrency Project is licensed under the MIT License.
-````
