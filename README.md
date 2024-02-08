@@ -76,7 +76,7 @@ We welcome contributions from the community to enhance the Cryptocurrency Projec
 Fork the repository.
 Create a new branch (git checkout -b feature/new-feature).
 Make changes and commit them (git commit -am 'Add new feature').
-Push to the branch (git push origin feature/new-feature).
+Push to the branch (git push origin feature/new feature).
 Create a pull request.
 
 ## License
