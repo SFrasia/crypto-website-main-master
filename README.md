@@ -18,35 +18,40 @@ The Cryptocurrency Project aims to revolutionize the digital currency landscape 
 
 Simple and fast interface: Enables fast and efficient peer-to-peer transactions.
 
-Installation
+## Installation
+
 To run the Cryptocurrency Project locally, follow these steps:
 
-Clone the repository:
+```Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your_username/cryptocurrency-project.git
+git clone https://github.com/your_username/crypto-website-main-master.git
+```
+
+````
 Navigate to the project directory:
-
 bash
 Copy code
-cd cryptocurrency-project
-Install dependencies:
+cd crypto-website-main-master ```
 
+```Install dependencies:
 bash
 Copy code
 npm install
-Start the application:
+Start the application: ```
 
 bash
 Copy code
 npm start
 Access the application at http://localhost:3000 in your web browser.
 
-Usage
+## Usage
+
 To use the Cryptocurrency Project, [provide instructions on how users can interact with the application, such as creating a wallet, making transactions, or exploring blockchain data].
 
-Contributing
+## Contributing
+
 We welcome contributions from the community to enhance the Cryptocurrency Project. To contribute:
 
 Fork the repository.
@@ -54,5 +59,8 @@ Create a new branch (git checkout -b feature/new-feature).
 Make changes and commit them (git commit -am 'Add new feature').
 Push to the branch (git push origin feature/new-feature).
 Create a pull request.
-License
+
+## License
+
 The Cryptocurrency Project is licensed under the MIT License.
+````
