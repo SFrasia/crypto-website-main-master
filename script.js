@@ -10,6 +10,14 @@ const btnsOpenModal = document.querySelectorAll(".show-modal");
 const form = document.querySelector("form");
 const searchInput = document.querySelector("#search_input");
 
+document.addEventListener("DOMContentLoaded", () => {
+  loadData();
+});
+
+function numberFormatter(number) {
+  return new Intl.NumberFormat("en-KE").format(number);
+}
+
 async function fetchCrypto() {
   const getData = await fetch(
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1000&page=1&sparkline=false"
@@ -38,7 +46,7 @@ function showData(data) {
       html = html += `
             <tr>
             <td>${name}</td>
-            <td>$${current_price}</td>
+            <td>$${numberFormatter(+current_price)}</td>
             <td class= "${
               +market_cap > 0 ? "success" : "danger"
             }">${market_cap.toFixed(2)}%</td>
@@ -49,32 +57,10 @@ function showData(data) {
             </tr>
             `;
     });
-  } else {
-    const {
-      name,
-      current_price,
-      market_cap_change_percentage_24h: market_cap,
-      price_change_percentage_24h: price_cap,
-    } = data;
-    html = html += `
-            <tr>
-            <td>${name}</td>
-            <td>$${current_price}</td>
-            <td class= "${
-              +market_cap > 0 ? "success" : "danger"
-            }">${market_cap.toFixed(2)}</td>
-            <td class = "${
-              +price_cap > 0 ? "success" : "danger"
-            }">${price_cap.toFixed(2)}</td>
-            <td><button class="buy show-modal">Buy</button></td>
-            </tr>
-            `;
   }
 
   tbody.insertAdjacentHTML("afterend", html);
 }
-
-loadData();
 
 const openModal = function () {
   modal.classList.remove("hidden");
@@ -92,9 +78,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
-for (let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener("click", openModal);
-
 btnCloseModal.addEventListener("click", closeModal);
 overlay.addEventListener("click", closeModal);
 
@@ -102,13 +85,37 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const searchVal = searchInput.value;
   if (searchVal === "") {
-    // document.getElementById("searchInput").value = "";
     alert("please write something");
     return false;
   }
+  tbody.innerHTML = "";
   const jsonData = await fetchCrypto();
+
   const coin = jsonData.find(
     (cn) => cn.name.toLowerCase() === searchVal.toLowerCase()
   );
-  showData(coin);
+  // showData(coin);
+  let html = "";
+
+  const {
+    name,
+    current_price,
+    market_cap_change_percentage_24h: market_cap,
+    price_change_percentage_24h: price_cap,
+  } = coin;
+  html = html += `
+            <tr>
+            <td>${name}</td>
+            <td>$${numberFormatter(+current_price)}</td>
+            <td class= "${
+              +market_cap > 0 ? "success" : "danger"
+            }">${market_cap.toFixed(2)}%</td>
+            <td class = "${
+              +price_cap > 0 ? "success" : "danger"
+            }">${price_cap.toFixed(2)}M</td>
+            <td><button class="buy show-modal">Buy</button></td>
+            </tr>
+            `;
+  tbody.insertAdjacentHTML("afterend", html);
+  searchInput.value = "";
 });
