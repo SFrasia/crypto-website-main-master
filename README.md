@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
 - [Features](#features)
+- [Technologies](#technologies)
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -18,6 +19,18 @@ The Cryptocurrency Project aims to revolutionize the digital currency landscape 
 ## Features
 
 Simple and fast interface: Enables fast and efficient peer-to-peer transactions.
+
+## Technologies
+
+![Static Badge](https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=Adobe%20Illustrator&labelColor=black)
+
+![Static Badge](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&labelColor=black)
+
+![Static Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&labelColor=black)
+
+![Static Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&labelColor=black)
+
+![Static Badge](https://img.shields.io/badge/Javascript-F7DF1E?style=for-the-badge&logo=Javascript&labelColor=black)
 
 ## Installation
 
