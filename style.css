@@ -130,6 +130,7 @@ form {
   width: 600px;
   height: 55px;
   display: flex;
+  gap: 0.5rem;
 }
 
 form input {
@@ -140,14 +141,21 @@ form input {
   padding: 10px;
 }
 
-form button {
+#search {
   background: tomato;
-  padding: 10px 50px;
+  padding: 10px 30px;
   border: none;
   outline: none;
   color: #fff;
 }
 
+#reset {
+  background-color: grey;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
 section {
   color: grey;
   margin-left: 40px;

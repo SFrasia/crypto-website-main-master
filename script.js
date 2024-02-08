@@ -9,6 +9,7 @@ const btnCloseModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 const form = document.querySelector("form");
 const searchInput = document.querySelector("#search_input");
+const resetBtn = document.querySelector("#reset");
 
 document.addEventListener("DOMContentLoaded", () => {
   loadData();
@@ -57,9 +58,29 @@ function showData(data) {
             </tr>
             `;
     });
+  } else {
+    const {
+      name,
+      current_price,
+      market_cap_change_percentage_24h: market_cap,
+      price_change_percentage_24h: price_cap,
+    } = data;
+    html = html += `
+              <tr>
+              <td>${name}</td>
+              <td>$${numberFormatter(+current_price)}</td>
+              <td class= "${
+                +market_cap > 0 ? "success" : "danger"
+              }">${market_cap.toFixed(2)}%</td>
+              <td class = "${
+                +price_cap > 0 ? "success" : "danger"
+              }">${price_cap.toFixed(2)}M</td>
+              <td><button class="buy show-modal">Buy</button></td>
+              </tr>
+              `;
   }
 
-  tbody.insertAdjacentHTML("afterend", html);
+  tbody.innerHTML = html;
 }
 
 const openModal = function () {
@@ -88,34 +109,13 @@ form.addEventListener("submit", async (e) => {
     alert("please write something");
     return false;
   }
-  tbody.innerHTML = "";
+
   const jsonData = await fetchCrypto();
 
   const coin = jsonData.find(
     (cn) => cn.name.toLowerCase() === searchVal.toLowerCase()
   );
-  // showData(coin);
-  let html = "";
-
-  const {
-    name,
-    current_price,
-    market_cap_change_percentage_24h: market_cap,
-    price_change_percentage_24h: price_cap,
-  } = coin;
-  html = html += `
-            <tr>
-            <td>${name}</td>
-            <td>$${numberFormatter(+current_price)}</td>
-            <td class= "${
-              +market_cap > 0 ? "success" : "danger"
-            }">${market_cap.toFixed(2)}%</td>
-            <td class = "${
-              +price_cap > 0 ? "success" : "danger"
-            }">${price_cap.toFixed(2)}M</td>
-            <td><button class="buy show-modal">Buy</button></td>
-            </tr>
-            `;
-  tbody.insertAdjacentHTML("afterend", html);
+  showData(coin);
   searchInput.value = "";
 });
+document.getElementById("reset").addEventListener("click", loadData);
