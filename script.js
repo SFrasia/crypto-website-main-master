@@ -102,6 +102,7 @@ form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const searchVal = searchInput.value;
   if (searchVal === "") {
+    // document.getElementById("searchInput").value = "";
     alert("please write something");
     return false;
   }
