@@ -9,7 +9,11 @@
 - [Contributing](#contributing)
 - [Licence](#licence)
 
-The Cryptocurrency Project aims to revolutionize the digital currency landscape by introducing a decentralized, secure, and efficient platform for peer-to-peer transactions. It aims to seeks to redefine the way we think about money and finance by offering a decentralized platform, and efficient alternative to traditional currency systems.
+# Overview
+
+https://github.com/SFrasia/crypto-website-main-master/assets/108404961/2f7b4cfb-4e45-42ba-bad8-e1d6ee30cc18
+
+The Cryptocurrency Project aims to revolutionize the digital currency landscape by introducing a decentralized, secure, and efficient platform for peer-to-peer transactions. It aims to seek to redefine the way we think about money and finance by offering a decentralized platform, and efficient alternative to traditional currency systems.
 
 ## Features
 
