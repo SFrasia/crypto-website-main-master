@@ -1,16 +1,13 @@
-# crypto-website
-
-# Overview
+# crypto-website-Frasia Nyakundi
 
 ## Table of Contents
 
-<u>Overview</u>
-<u>Features</u>
-Installation
-Usage
-Contributing
-License
-Overview
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#Installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Licence](#licence)
 
 The Cryptocurrency Project aims to revolutionize the digital currency landscape by introducing a decentralized, secure, and efficient platform for peer-to-peer transactions. It aims to seeks to redefine the way we think about money and finance by offering a decentralized platform, and efficient alternative to traditional currency systems.
 
