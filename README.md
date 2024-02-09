@@ -85,4 +85,5 @@ Fork the repository.
 ## License
 
 Copyright (c) [2024] [Frasia Nyakundi]
+
 The Cryptocurrency Project is licensed under the MIT License.
