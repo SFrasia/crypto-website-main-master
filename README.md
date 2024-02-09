@@ -67,7 +67,7 @@ Access the application at http://localhost:3000 in your web browser.
 
 ## Usage
 
-To use the Cryptocurrency Project, [provide instructions on how users can interact with the application, such as creating a wallet, making transactions, or exploring blockchain data].
+To use the Cryptocurrency Project, you can also use this API `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1000&page=1&sparkline=false` to explore more on functionality and data.
 
 ## Contributing
 
@@ -75,12 +75,14 @@ We welcome contributions from the community to enhance the Cryptocurrency Projec
 
 Fork the repository.
 . Create a new branch `git checkout -b feature/new-feature`.
+
 . Make changes and commit them `git commit -am 'Add new feature`.
+
 . Push to the branch `git push origin feature/new feature`.
+
 . Create a pull request.
 
 ## License
 
 Copyright (c) [2024] [Frasia Nyakundi]
-
 The Cryptocurrency Project is licensed under the MIT License.
