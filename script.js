@@ -29,7 +29,7 @@ async function fetchCrypto() {
 
 const loadData = async () => {
   const jsonData = await fetchCrypto();
-  const splittedData = jsonData.slice(0, 10);
+  const splittedData = jsonData.slice(0, 20);
   showData(splittedData);
 };
 
